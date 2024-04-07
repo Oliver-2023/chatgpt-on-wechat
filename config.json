@@ -10,7 +10,7 @@
     "亲亲,",
     "亲亲，"
   ],
-  "single_chat_reply_prefix": "",
+  "single_chat_reply_prefix": "你好",
   "group_chat_prefix": [
     "亲亲",
     "亲亲,",
@@ -21,6 +21,8 @@
     "gpt调试",
     "今天吃什么好"
   ],
+  "group_chat_reply_prefix": "这是前缀",
+  "group_chat_reply_suffix": "这是后缀",
   "image_create_prefix": [
     "画"
   ],

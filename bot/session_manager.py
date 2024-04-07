@@ -8,6 +8,7 @@ class Session(object):
         self.session_id = session_id
         self.messages = []
         if system_prompt is None:
+            print(conf().get("character_desc", ""))
             self.system_prompt = conf().get("character_desc", "")
         else:
             self.system_prompt = system_prompt
