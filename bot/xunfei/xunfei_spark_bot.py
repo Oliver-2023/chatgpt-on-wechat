@@ -175,7 +175,8 @@ class XunFeiBot(Bot):
             },
             "payload": {
                 "message": {
-                    "text": question
+                    "text": [{"role":"system","content":"你是一个佛学爱好者，回复任何问题都会带上佛学典籍原文"}, #设置对话背景或者模型角色
+                    {"role": "user", "content": question}]
                 }
             }
         }
