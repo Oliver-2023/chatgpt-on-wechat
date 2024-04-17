@@ -175,11 +175,14 @@ class XunFeiBot(Bot):
             },
             "payload": {
                 "message": {
-                    "text": [{"role":"system","content":"你是一个佛学爱好者，回复任何问题都会带上佛学典籍原文"}, #设置对话背景或者模型角色
+                    "text": [
+                    {"role":"system","content":"你是一个佛学爱好者，回复任何问题都会带上佛学典籍原文"}, #设置对话背景或者模型角色
                     {"role": "user", "content": question}]
                 }
             }
         }
+        print('--------------------')
+        print(data)
         return data
 
 
@@ -243,6 +246,8 @@ def on_message(ws, message):
 
 
 def gen_params(appid, domain, question, temperature=0.5):
+    question.insert(0,{"role": "system", "content":str(conf().get("character_desc")) })
+    print(question)
     """
     通过appid和用户的提问来生成请参数
     """
@@ -262,8 +267,11 @@ def gen_params(appid, domain, question, temperature=0.5):
         },
         "payload": {
             "message": {
-                "text": question
+                "text":
+                    question
             }
         }
     }
+    print('-----------------')
+    print(data)
     return data

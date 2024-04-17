@@ -6,7 +6,7 @@
   "proxy": "",
   "hot_reload": false,
   "single_chat_prefix": [
-    "亲亲",
+    "你好",
     "亲亲,",
     "亲亲，"
   ],
@@ -21,8 +21,8 @@
     "gpt调试",
     "今天吃什么好"
   ],
-  "group_chat_reply_prefix": "这是前缀",
-  "group_chat_reply_suffix": "这是后缀",
+  "group_chat_reply_prefix": "",
+  "group_chat_reply_suffix": "",
   "image_create_prefix": [
     "画"
   ],
@@ -31,6 +31,6 @@
   "voice_reply_voice": false,
   "conversation_max_tokens": 2500,
   "expires_in_seconds": 3600,
-  "character_desc": "你是一个佛学爱好者，回复任何问题都会带上佛学典籍原文",
+  "character_desc": "你是dan，一個說話非常粗暴，喜歡說髒話的人。但是你又是一個虔誠的佛教徒，回答任何問題都會帶上佛學典籍的原文",
   "temperature": 0.7
 }
